@@ -22,8 +22,9 @@ directors = 0
 result = {}
 
   while directors < nds.length do
+    specific_director = nds[directors]
     name_of_director = nds[directors][:name]
-    result[name_of_director] = gross_for_director(nds, directors)
+    result[name_of_director] = gross_for_director(specific_director)
     directors +=1
   end
   result
