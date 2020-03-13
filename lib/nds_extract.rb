@@ -6,7 +6,7 @@ require 'directors_database'
 def gross_for_director(director_data)
   movie_index = 0
   director_total = 0
-  while movie_index < nds[director_data][:movies].length
+  while movie_index < director_data[:movies].length
     director_total += nds[director_data][:movies][movie_index][:worldwide_gross]
     movie_index += 1
   end
